@@ -1,0 +1,8 @@
+
+[submodule "embedded_pipeline/components/sources/tflite-micro-esp-examples"]
+	path = embedded_pipeline/components/sources/tflite-micro-esp-examples
+	url = https://github.com/espressif/tflite-micro-esp-examples
+
+[submodule "tflite-esp-template"]
+	path = tflite-esp-template
+	url = https://github.com/itemis/tflite-esp-template

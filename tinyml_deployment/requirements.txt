@@ -1,0 +1,5 @@
+# requirements for the python project
+numpy
+tensorflow
+keras
+pandas
