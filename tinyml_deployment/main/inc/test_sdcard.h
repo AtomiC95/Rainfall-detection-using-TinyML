@@ -18,6 +18,7 @@ class Database
 public:
     struct stat st;
 
+    int file_created = 0;
     sdmmc_card_t *card;
     esp_err_t ret;
     sdmmc_host_t host = SDSPI_HOST_DEFAULT();

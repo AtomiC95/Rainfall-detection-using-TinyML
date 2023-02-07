@@ -161,3 +161,6 @@ data/*
 out.txt
 *.wav
 *.csv
+*.txt
+
+tinyml_deployment/main/inc/userData.h

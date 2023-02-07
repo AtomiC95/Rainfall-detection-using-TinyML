@@ -4,6 +4,7 @@
 #include "FeatureProvider.h"
 #include "PredictionHandler.h"
 #include "PredictionInterpreter.h"
+#include "test_sdcard.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "micro_model.h"

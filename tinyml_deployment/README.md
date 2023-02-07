@@ -88,5 +88,4 @@ This source code is licensed under the Apache-2.0 license found in the [license]
 
 Feel free to contact us if you have any questions!
 
-rafael.tappe.maestro@itemis.com<br>
 nikolas.rieder@itemis.com
