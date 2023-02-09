@@ -13,8 +13,8 @@
 #include "DataProvider.h"
 // #include "TrainDataRecorder.h"
 // #include "main_functions.h"
-// #include "mqtt.h"
-// #include "wifi.h"
+#include "mqtt.h"
+#include "wifi.h"
 
 // using namespace std::chrono;
 
@@ -34,17 +34,17 @@ void collect_data()
   data_provider.Init();
   sdcard.sdcard_init();
   
-  // esp_mqtt_client_config_t mqtt_cfg = {
-  //     .uri = "mqtt://192.168.178.80",
-  // };
-  // esp_mqtt_client_handle_t client = esp_mqtt_client_init(&mqtt_cfg);
-  // nvs_flash_init();
-  // esp_netif_init();
-  // wifi_init_sta();
-  // // esp_event_loop_create_default();
-  // esp_mqtt_client_register_event(client,
-  //                                (esp_mqtt_event_id_t)ESP_EVENT_ANY_ID,
-  //                                mqtt_event_handler, client);
+  esp_mqtt_client_config_t mqtt_cfg = {
+      .uri = "mqtt://192.168.178.80",
+  };
+  esp_mqtt_client_handle_t client = esp_mqtt_client_init(&mqtt_cfg);
+  nvs_flash_init();
+  esp_netif_init();
+  wifi_init_sta();
+  // esp_event_loop_create_default();
+  esp_mqtt_client_register_event(client,
+                                 (esp_mqtt_event_id_t)ESP_EVENT_ANY_ID,
+                                 mqtt_event_handler, client);
   int counter = 0;
   int start_loop = 1;
   int start_loop_comp = 0;
